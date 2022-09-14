@@ -32,16 +32,14 @@ function update() {
     dialog.showMessageBox({
       type: 'info',
       title: '应用更新',
-      message: '发现新版本，是否立即更新？若选择否则在关闭程序后自动更新！',
+      message: '发现新版本，是否立即更新？若选择否则在关闭程序后自动更新！应用将在关闭程序后更新！',
       buttons: ['是', '否']
     }).then((buttonIndex) => {
       if(buttonIndex.response == 0) {  //选择是，则退出程序，安装新版本
         autoUpdater.quitAndInstall() 
         app.quit()
       }else{
-        dialog.showMessageBox({
-            message: '应用将在关闭程序后更新！'
-          })
+        
       }
     })
   })

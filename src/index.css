@@ -28,12 +28,12 @@ body, html {
   padding: 15px;
 }
 .bak{
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   float:left;
 }
 .bar-h1{
-  font-size: 30px !important;
-  margin-top: -4px;
-  margin-left: 50px;
+  font-size: 20px !important;
+  margin-top: -1.5px;
+  margin-left: 30px;
 }

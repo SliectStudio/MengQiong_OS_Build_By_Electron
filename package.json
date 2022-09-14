@@ -1,11 +1,11 @@
 {
   "name": "mengqiong_os_build_by_electron",
-  "productName": "MengQiongOS Launcher",
-  "version": "1.0.0",
+  "productName": "MengQiongOS-Launcher",
+  "version": "1.0.0-alpha.110",
   "description": "一个优秀的PPTX系统",
   "main": "src/index.js",
   "build": {
-    "productName": "MengQiongOS Launcher",
+    "productName": "MengQiongOS-Launcher",
     "appId": "top.slicet.mengqiongos",
     "copyright": "构建by yunjin",
     "directories": {
@@ -34,6 +34,7 @@
       "iconUrl": "https://api.jamyido.top/img/logo.png"
     },
     "nsis": {
+      "artifactName": "${productName}-Setup-${version}.${ext}",
       "oneClick": false,
       "allowElevation": true,
       "allowToChangeInstallationDirectory": true,
