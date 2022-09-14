@@ -1,9 +1,9 @@
 {
   "name": "mengqiong_os_build_by_electron",
   "productName": "MengQiongOS-Launcher",
-  "version": "1.0.0-alpha.110",
+  "version": "1.0.0-alpha.113",
   "description": "一个优秀的PPTX系统",
-  "main": "src/index.js",
+  "main": "src/mian/index.js",
   "build": {
     "productName": "MengQiongOS-Launcher",
     "appId": "top.slicet.mengqiongos",
@@ -26,7 +26,7 @@
         "owner": "HuYihe2008",
         "repo": "MengQiong_OS_Build_By_Electron",
         "private": false,
-        "token": "xxx",
+        "token": "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",
         "releaseType": "release"
       }
     ],
