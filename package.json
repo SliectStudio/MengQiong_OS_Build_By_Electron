@@ -1,0 +1,123 @@
+{
+  "name": "mengqiong_os_build_by_electron",
+  "productName": "MengQiongOS Launcher",
+  "version": "1.0.0",
+  "description": "一个优秀的PPTX系统",
+  "main": "src/index.js",
+  "build": {
+    "productName": "MengQiongOS Launcher",
+    "appId": "top.slicet.mengqiongos",
+    "copyright": "构建by yunjin",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": "ia32"
+        }
+      ],
+      "icon": "./src/assets/images/icon/logo.ico"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "HuYihe2008",
+        "repo": "MengQiong_OS_Build_By_Electron",
+        "private": false,
+        "token": "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",
+        "releaseType": "release"
+      }
+    ],
+    "squirrelWindows": {
+      "iconUrl": "https://api.jamyido.top/img/logo.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "./src/assets/images/icon/logo.ico",
+      "uninstallerIcon": "./src/assets/images/icon/logo.ico",
+      "installerHeaderIcon": "./src/assets/images/icon/logo.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "perMachine": false,
+      "unicode": true,
+      "deleteAppDataOnUninstall": false
+    },
+    "extends": null
+  },
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "make2": "electron-builder",
+    "publish2": "electron-builder -p always"
+  },
+  "keywords": [],
+  "author": {
+    "name": "HuYihe2008",
+    "email": "2812856215@qq.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "HuYihe2008",
+              "name": "MengQiong_OS_Build_By_Electron"
+            },
+            "prerelease": false,
+            "release": true,
+            "draft": false
+          }
+        }
+      ],
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "mengqiong_os_build_by_electron"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-builder-squirrel-windows": "^23.5.1",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^5.2.1",
+    "ipc": "^0.0.1",
+    "update-electron-app": "^2.0.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.66",
+    "@electron-forge/maker-deb": "^6.0.0-beta.66",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.66",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.66",
+    "@electron-forge/maker-zip": "^6.0.0-beta.66",
+    "@electron-forge/publisher-github": "^6.0.0-beta.66",
+    "electron": "20.1.3"
+  }
+}

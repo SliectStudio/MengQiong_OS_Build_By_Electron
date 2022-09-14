@@ -1,0 +1,39 @@
+*{
+  font-family: url(./assets/HarmonyOS_Sans_SC_Medium.ttf);
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.text{
+  margin-top: 50px;
+}
+.text-1{
+  margin-top: 20px;
+  width: 300px;
+}
+.middle{
+  text-align: center !important;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.top-bar{
+  padding: 15px;
+}
+.bak{
+  width: 30px;
+  height: 30px;
+  float:left;
+}
+.bar-h1{
+  font-size: 30px !important;
+  margin-top: -4px;
+  margin-left: 50px;
+}
