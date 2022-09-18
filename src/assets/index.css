@@ -3,10 +3,16 @@
   src: url("./HarmonyOS_Sans_SC_Medium.ttf"); /* TTF file for CSS3 browsers */  
   src: url('./HarmonyOS_Sans_SC_Regular.ttf');
  }  
+ @keyframes fadenum{
+
+  0%{opacity: 0;}
+
+}
 *{
   font-family: HarmonyOS_Sans_SC !important;
 }
 body, html {
+  animation:fadenum 0.5s;
   margin: 0;
   padding: 0;
   width: 100%;
