@@ -1,4 +1,4 @@
-const { app, BrowserWindow, dialog } = require('electron');
+const { app, BrowserWindow, shell, dialog } = require('electron');
 const { NsisUpdater } = require("electron-updater");
 const path = require('path');
 const { autoUpdater } = require('electron-updater')
@@ -63,6 +63,12 @@ const createWindow = () => {
     minWidth: 1124,
     minHeight:620,
   });
+
+  mainWindow.webContents.on('new-window', function(e, url) {
+    e.preventDefault();
+    require('electron').shell.openExternal(url);
+  })
+  
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, '../render/index.html'));
 
