@@ -54,19 +54,19 @@ function update() {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1124,
+    height: 620,
     autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
+    minWidth: 1124,
+    minHeight:620,
   });
-
   // and load the index.html of the app.
   mainWindow.loadFile(path.join(__dirname, '../render/index.html'));
 
   // Open the DevTools.
-  //mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished
