@@ -1,4 +1,4 @@
-const { app, BrowserWindow, shell, dialog } = require('electron');
+const { app, BrowserWindow, dialog } = require('electron');
 const { NsisUpdater } = require("electron-updater");
 const path = require('path');
 const { autoUpdater } = require('electron-updater')

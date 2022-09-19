@@ -3,7 +3,7 @@
   "productName": "MengQiongOS-Launcher",
   "version": "1.0.0-beta.1",
   "description": "一个优秀的PPTX系统",
-  "main": "src/mian/index.js",
+  "main": "src/main/index.js",
   "build": {
     "productName": "MengQiongOS-Launcher",
     "appId": "top.slicet.mengqiongos",
