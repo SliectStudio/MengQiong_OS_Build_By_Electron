@@ -6,7 +6,7 @@ function update() {
   
         const options = {
             provider: 'generic',
-            url: `http://mengqiongos.sliect.top/${process.platform}`
+            url: `http://test.mengqiongos.sliect.top/${process.platform}`
         }
 
   const autoUpdater = new NsisUpdater(options)
