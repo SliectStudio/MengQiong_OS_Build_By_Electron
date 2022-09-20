@@ -11,6 +11,12 @@
 *{
   font-family: HarmonyOS_Sans_SC !important;
 }
+#spinner {
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+}
 body, html {
   animation:fadenum 0.5s;
   margin: 0;

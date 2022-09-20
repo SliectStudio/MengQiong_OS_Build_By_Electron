@@ -1,4 +1,4 @@
-const { app, BrowserWindow, shell, dialog } = require('electron');
+const { app, BrowserWindow, dialog } = require('electron');
 const { NsisUpdater } = require("electron-updater");
 const path = require('path');
 const { autoUpdater } = require('electron-updater')
@@ -6,7 +6,7 @@ function update() {
   
         const options = {
             provider: 'generic',
-            url: `http://mengqiongos.sliect.top/${process.platform}`
+            url: `http://test.mengqiongos.sliect.top/${process.platform}`
         }
 
   const autoUpdater = new NsisUpdater(options)
