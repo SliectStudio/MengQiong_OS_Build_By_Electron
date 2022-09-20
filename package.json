@@ -1,7 +1,7 @@
 {
   "name": "mengqiong_os_build_by_electron",
   "productName": "MengQiongOS-Launcher",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "一个优秀的PPTX系统",
   "main": "src/main/index.js",
   "build": {
@@ -18,6 +18,7 @@
           "arch": "ia32"
         }
       ],
+      
       "icon": "./src/main/assets/images/icon/logo.ico"
     },
     "publish": [
@@ -47,6 +48,11 @@
       "unicode": true,
       "deleteAppDataOnUninstall": false
     },
+    "asar": false,
+    "extraResources": [{
+      "from": "src/~sysmain",
+      "to": "app/~sysmain"
+    }],
     "extends": null
   },
   "scripts": {
